@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body { display: flex; min-height: 100vh; font-family: 'Red Hat Display', sans-serif; background-color: hsl(225, 100%, 94%); }
+
+.container-order-summary { display: flex; align-self: center; justify-self: center; justify-content: center; align-content: center; }
+
+.card { width: 350px; margin: auto; margin-bottom: 10px; border-radius: 20px; box-shadow: 3px 3px 5px 3px #bbb; }
+
+.card-img-top { border-radius: 20px 20px 0 0; }
+
+.card-body { padding: 30px; text-align: center; }
+
+.card-body .card-text,
+.card-body .subscription-options span:nth-of-type(2) { color: hsl(224, 23%, 55%); }
+
+.card-body .subscription-options a { font-weight: 700; font-size: 14px; color: hsl(245, 75%, 52%); transition: all .4s; }
+
+.card-body .subscription-options a:hover { text-decoration: none; opacity: .7; }
+
+.card-body .subscription-options ~ a { display: block; margin-top: 30px; font-weight: 700; }
+
+.card-body .subscription-options ~ a:nth-of-type(1) { background-color: hsl(245, 75%, 52%); transition: all .4s; box-shadow: 0 10px 15px 5px hsl(225, 100%, 94%); }
+
+.card-body .subscription-options ~ a:nth-of-type(1):hover { opacity: .7; }
+
+.card-body .subscription-options ~ a:nth-of-type(2) { margin-top: 10px; opacity: .7; transition: all .4s; }
+
+.card-body .subscription-options ~ a:nth-of-type(2):hover { opacity: 1; }
+
+.card-body .subscription-options ~ a:nth-of-type(2),
+.card-body .subscription-options ~ a:nth-of-type(2):hover,
+.card-body .subscription-options ~ a:nth-of-type(2):active { border-color: transparent; background-color: transparent; }
+
+.subscription-options { display: flex; align-items: center; gap: 15px; padding: 15px; border-radius: 10px; text-align: initial; background-color: hsl(225, 100%, 98%); }
+
+.card-title,
+.subscription-options div span:first-of-type { font-weight: 900; }
+
+.attribution { text-align: center; }
+
+
